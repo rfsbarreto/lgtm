@@ -28,7 +28,7 @@ const GifDetail = ({ gif }) => {
           />
         </div>
         <div class="content">
-          <p>{`![LGTM](${gif.image_original_url}`}</p>
+          <p>{`![LGTM](${gif.image_original_url})`}</p>
         </div>
         <div class="ui bottom attached button copyToken" name="copyToken" value="copy">
           <i class="clipboard icon"></i>
