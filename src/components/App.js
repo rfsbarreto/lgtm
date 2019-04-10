@@ -21,12 +21,13 @@ export default class App extends Component {
       <div className="ui container" style={{ marginTop: "10px" }}>
         <GifDetail gif={this.state.gif} />
 
-        <div className="ui divider"></div>
+        <div className="ui divider" />
+
         <center>
           <button
-            className="ui inverted orange button"
+            className="ui inverted primary button"
             onClick={this.onClickRandom}
-            align='centered'
+            align="centered"
           >
             <i className="icon sync" />
             Generate random approve gif!
