@@ -21,7 +21,7 @@ export default class App extends Component {
       <div className="ui container" style={{ marginTop: "10px" }}>
         <GifDetail gif={this.state.gif} />
 
-        <div class="ui divider"></div>
+        <div className="ui divider"></div>
         <center>
           <button
             className="ui inverted orange button"
