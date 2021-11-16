@@ -18,11 +18,14 @@ export default class GifDetail extends Component {
     }
 
     const {
-      fixed_width_downsampled_url,
+      images: { fixed_width_downsampled },
       title,
-      image_original_url
+      id,
     } = this.props.gif;
-    const githubEmbed = `![LGTM](${image_original_url})`;
+
+    // Hack to use the embeded GIF link 👀
+    const githubEmbed = `![LGTM](https://media.giphy.com/media/${id}/giphy.gif)`;
+
     const copyButtonIcon = this.state.copied ? "check" : "clipboard";
     const copyText = this.state.copied ? "copied!" : "copy to clipboard";
 
@@ -31,7 +34,7 @@ export default class GifDetail extends Component {
         <div className="image">
           <img
             className="ui medium rounded image"
-            src={fixed_width_downsampled_url}
+            src={fixed_width_downsampled.url}
             alt={title}
           />
         </div>
